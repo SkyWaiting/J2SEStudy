@@ -9,7 +9,6 @@ import java.util.concurrent.CyclicBarrier;
  * User: guorui
  * Date: 13-7-18
  * Time: 上午9:36
- *
  */
 public class CyclicBarrierTest {
     private static final int THREAD_COUNT = 10;
@@ -22,9 +21,9 @@ public class CyclicBarrierTest {
                 }
             });
 
-    public static void main(String[] args) throws InterruptedException,BrokenBarrierException{
-        for (int i =0; i < 10; i++){
-            new Thread(String.valueOf(i)){
+    public static void main(String[] args) throws InterruptedException, BrokenBarrierException {
+        for (int i = 0; i < 10; i++) {
+            new Thread(String.valueOf(i)) {
                 @Override
                 public void run() {
                     try {

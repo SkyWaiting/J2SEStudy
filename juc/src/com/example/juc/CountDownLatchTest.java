@@ -3,11 +3,9 @@ package com.example.juc;
 import java.util.concurrent.CountDownLatch;
 
 /**
- *
  * User: guorui
  * Date: 13-7-22
  * Time: 上午9:13
- *
  */
 public class CountDownLatchTest {
 
@@ -18,13 +16,13 @@ public class CountDownLatchTest {
         processOneGroup("分组2");
     }
 
-    private static void processOneGroup(final String groupName){
+    private static void processOneGroup(final String groupName) {
         final CountDownLatch start_count_down = new CountDownLatch(1);
         final CountDownLatch end_count_down = new CountDownLatch(GROUP_SIZE);
         System.out.println("==============>\n分组：" + groupName + "比赛开始：");
-        for (int i = 0; i < GROUP_SIZE ; i++){
-            new Thread(String.valueOf(i)){
-                public void run(){
+        for (int i = 0; i < GROUP_SIZE; i++) {
+            new Thread(String.valueOf(i)) {
+                public void run() {
                     System.out.println("我是线程组：【" + groupName + "】，第：" + this.getName() + " 号线程，我已经准备就绪！");
                     try {
                         start_count_down.await();//等待开始指令发出

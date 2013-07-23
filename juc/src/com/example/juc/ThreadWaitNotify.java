@@ -3,11 +3,9 @@ package com.example.juc;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- *
  * User: guorui
  * Date: 13-7-22
  * Time: 下午12:48
- *
  */
 public class ThreadWaitNotify {
 
@@ -17,14 +15,14 @@ public class ThreadWaitNotify {
 
     private final static AtomicInteger NOW_CALL_COUNT = new AtomicInteger(0);
 
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException {
         Thread[] threads = new Thread[THREAD_COUNT];
-        for (int i=0; i < THREAD_COUNT; i++){
-            threads[i] = new Thread(String.valueOf(i)){
-                synchronized public void run(){
+        for (int i = 0; i < THREAD_COUNT; i++) {
+            threads[i] = new Thread(String.valueOf(i)) {
+                synchronized public void run() {
                     int nowValue = NOW_CALL_COUNT.get();
-                    while (true){
-                        if (nowValue < QUERY_MAX_LENGTH && NOW_CALL_COUNT.compareAndSet(nowValue,nowValue+1)){
+                    while (true) {
+                        if (nowValue < QUERY_MAX_LENGTH && NOW_CALL_COUNT.compareAndSet(nowValue, nowValue + 1)) {
                             break;//获取到了
                         }
                         try {
@@ -46,7 +44,7 @@ public class ThreadWaitNotify {
                 }
             };
         }
-        for (int i = 0;i < THREAD_COUNT;i++){
+        for (int i = 0; i < THREAD_COUNT; i++) {
             threads[i].start();
         }
     }
