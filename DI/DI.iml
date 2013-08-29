@@ -13,7 +13,11 @@
           <root url="jar://$MODULE_DIR$/../../java7developer/lib/guice-3.0.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../Guice/guice-3.0-src.zip!/guice-3.0-src/core/src" />
+          <root url="jar://$MODULE_DIR$/../../Guice/guice-3.0-src.zip!/guice-3.0-src/core/test" />
+          <root url="jar://$MODULE_DIR$/../../Guice/guice-3.0-src.zip!/guice-3.0-src/core/src" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
