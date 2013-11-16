@@ -11,17 +11,18 @@ import java.util.Set;
 import static java.nio.file.attribute.PosixFilePermission.*;
 
 /**
- *
+ * 特定文件属性支持
  * User: guorui
- * Date: 13-8-26
- * Time: 上午11:20
+ * Date: 13-8-25
+ * Time: 下午5:26
  *
  */
 public class Listing_2_5 {
     public static void main(String[] args) {
-        Path profile = Paths.get("/home/guorui/.profile");
+        Path profile = Paths.get("C:\\cygwin\\home\\guorui\\.profile");
+
         try {
-            PosixFileAttributes attrs = Files.readAttributes(profile,PosixFileAttributes.class);
+            PosixFileAttributes attrs = Files.readAttributes(profile, PosixFileAttributes.class);
             Set<PosixFilePermission> posixFilePermissions = attrs.permissions();
             posixFilePermissions.clear();
 
