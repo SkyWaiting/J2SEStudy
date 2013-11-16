@@ -11,7 +11,6 @@
       <module fileurl="file://$PROJECT_DIR$/mindview/mindview.iml" filepath="$PROJECT_DIR$/mindview/mindview.iml" />
       <module fileurl="file://$PROJECT_DIR$/nio/nio.iml" filepath="$PROJECT_DIR$/nio/nio.iml" />
       <module fileurl="file://$PROJECT_DIR$/nio2/nio2.iml" filepath="$PROJECT_DIR$/nio2/nio2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/scalatry/scalatry.iml" filepath="$PROJECT_DIR$/scalatry/scalatry.iml" />
       <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
       <module fileurl="file://$PROJECT_DIR$/tools/tools.iml" filepath="$PROJECT_DIR$/tools/tools.iml" />
     </modules>
