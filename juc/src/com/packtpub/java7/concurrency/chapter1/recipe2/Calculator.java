@@ -14,6 +14,7 @@ public class Calculator implements Runnable{
     public Calculator(int number){
         this.number = number;
     }
+
     /**
      * When an object implementing interface <code>Runnable</code> is used
      * to create a thread, starting the thread causes the object's
