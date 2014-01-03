@@ -9,7 +9,7 @@ import java.util.Random;
  * User: guorui
  * Date: 13-3-8
  * Time: 下午9:41
- * To change this template use File | Settings | File Templates.
+ *
  */
 
 enum CartoonCharacter implements Generator{

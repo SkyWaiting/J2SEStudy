@@ -25,7 +25,7 @@ public class MyMessageDigestTest {
             MessageDigest alga = MessageDigest.getInstance("SHA-1");
             alga.update(myinfo.getBytes());
             byte[] digesta = alga.digest();
-            System.out.println("本消息摘要是：" + byte2hex(digesta));
+            System.out.println("本消息摘要是："+byte2hex(digesta));
             //通过某种方式传给其他人你的消息和摘要对方可以判断是否更改或传输正常
             MessageDigest algb = MessageDigest.getInstance("SHA-1");
             algb.update(myinfo.getBytes());
