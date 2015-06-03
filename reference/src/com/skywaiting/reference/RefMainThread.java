@@ -44,6 +44,15 @@ public class RefMainThread {
         PhantomReference<RefTestObj> phanRefObj = new PhantomReference<RefTestObj>(phanRef,phanRefQueue);
         
         //打印正常情况下三种对象引用
+        System.out.println(softRefObj);
+        System.out.println(weakRefObj);
+        System.out.println(phanRefObj);
+        
+        //将对象清空
+        softRef = null;
+        weakRef = null;
+        phanRef = null;
+        
         
 
     }
