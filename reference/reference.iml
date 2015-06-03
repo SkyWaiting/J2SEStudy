@@ -7,17 +7,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Java/jdk1.7.0_25/lib/tools.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://C:/Program Files (x86)/Java/jdk1.7.0_25/lib/tools.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
   </component>
 </module>
-
